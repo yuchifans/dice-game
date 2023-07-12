@@ -96,7 +96,7 @@ public class CustomerController {
             if (customer.isPresent() && password.equals(customer.get().getPassword())) {
                 Customer customerToLoginIn = customer.get();
                 customerToLoginIn.setStatus(CustomerStatus.ACTIVE);
-                customerService.addCustomer(customerToLoginIn);
+                customerService.changeCustomerStatus(customerToLoginIn);
                 httpSession.setAttribute("ssn", ssn);
                 return new ApiResultFactory<Customer>(true)
                         .create();

@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>se.kindred</groupId>
 	<artifactId>dice-game</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>dice-game</name>
 	<description>a new gaming system that will allow use rs to play dice betting game.</description>
 	<properties>

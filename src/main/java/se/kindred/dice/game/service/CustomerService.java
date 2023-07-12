@@ -31,6 +31,12 @@ public class CustomerService {
         return result;
     }
 
+    public Customer changeCustomerStatus(Customer customer) {
+        if (customer == null)
+            throw new IllegalArgumentException();
+        return customerRepository.save(customer);
+    }
+
     public void removeCustomer(String ssn) {
        customerRepository.deleteById(ssn);
     }
